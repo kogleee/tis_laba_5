@@ -1,18 +1,5 @@
-function func1() {
-	console.log('1');
-}
+let btn = document.querySelector("#btn")
 
-function func2() {
-	console.log('2');
-}
-
-function func3() {
-	console.log('3');
-}
-
-
-let elem = document.querySelector("#elem")
-
-elem.addEventListener("click", func1)
-elem.addEventListener("click", func2)
-elem.addEventListener("click", func3)
+btn.addEventListener("dblclick", function(){
+	alert("тыкнул 2 раза")
+})
