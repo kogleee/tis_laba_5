@@ -1,8 +1,8 @@
-let elem = document.querySelector('#elem');
+let elem = document.querySelector("#elem")
+let btn = document.querySelector("#btn")
 
-elem.addEventListener('click', function() {
-	let self = this;
-	setInterval(function() {
-		self.value = Number(elem.value) + 1;
-	}, 1000);
-});
+btn.addEventListener("click", function(){
+	setInterval(() =>{
+		+elem.textContent--
+	},1000)
+})
